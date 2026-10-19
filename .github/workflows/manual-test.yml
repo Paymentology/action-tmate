@@ -40,6 +40,9 @@ on:
           - 'true'
           - 'false'
 
+permissions:
+  contents: read
+
 jobs:
   test:
     if: ${{ inputs.container-runs-on == '(none)' }}
